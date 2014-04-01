@@ -1,0 +1,16 @@
+Source: huayra-config-pkg-gimp
+Section: config
+Priority: extra
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Build-Depends: cdbs, debhelper (>= 8.0.0), config-package-dev (>= 4.13~),
+Standards-Version: 3.9.3
+Homepage: http://huayra.conectarigualdad.gob.ar
+
+Package: huayra-config-pkg-gimp
+Architecture: all
+Depends: ${misc:Depends}, gimp
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Configuración de Gimp para Huayra
+ Este paquete contiene archivos de configuración de gimp para Huayra.
+
